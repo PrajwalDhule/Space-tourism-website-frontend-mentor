@@ -13,13 +13,13 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   margin: 0;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 .nav {
@@ -60,40 +60,5 @@ a {
     background-color: rgb(60, 60, 60);
     transform: translateX(6em);
     z-index: 1;
-  }
-}
-
-.home {
-  position: absolute;
-  color: white;
-  width: 100vw;
-  bottom: 10vh;
-  @include flex(space-between);
-  .left {
-    width: 35%;
-    p {
-      margin: 0;
-      padding: 0;
-    }
-    .medium {
-      font-family: "Barlow Condensed", sans-serif;
-      font-size: 28px;
-      text-transform: uppercase;
-    }
-    .big {
-      font-family: "Bellefair", serif;
-      font-size: 150px;
-      text-transform: uppercase;
-    }
-    .small {
-      font-family: "Barlow Condensed", sans-serif;
-      font-weight: lighter;
-    }
-  }
-  .right {
-    width: 35%;
-    a {
-      color: white;
-    }
   }
 }

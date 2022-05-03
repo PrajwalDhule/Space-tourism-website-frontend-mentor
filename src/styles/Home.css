@@ -1,0 +1,52 @@
+.home {
+  position: absolute;
+  color: white;
+  width: 100vw;
+  bottom: 10vh;
+  text-align: left;
+  padding: 0 0 3rem 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .left {
+  width: 35%;
+}
+
+.home .left p {
+  margin: 0;
+  padding: 0;
+}
+
+.home .left .medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.home .left .big {
+  font-family: "Bellefair", serif;
+  font-size: 150px;
+  text-transform: uppercase;
+}
+
+.home .left .small {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+}
+
+.home .right {
+  width: 35%;
+}
+
+.home .right a {
+  color: white;
+}
+/*# sourceMappingURL=Home.css.map */
