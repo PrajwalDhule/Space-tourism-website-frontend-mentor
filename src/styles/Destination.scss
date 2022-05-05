@@ -1,0 +1,48 @@
+@mixin flex($jc: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: center;
+}
+
+.container {
+  background-image: url("../starter-code/assets/destination/background-destination-desktop.jpg");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  color: white;
+  text-align: left;
+  padding: 9.5rem 0 0 10rem;
+  .heading {
+    text-transform: uppercase;
+    @include flex(flex-start);
+    p + p {
+      margin-left: 0.8em;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  }
+  .content {
+    @include flex(center);
+    .left {
+      width: 40vw;
+      img {
+        margin-top: 25px;
+        height: 45vh;
+      }
+    }
+    .right {
+      width: 40vw;
+      height: 100%;
+      div {
+        width: 100%;
+        p {
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Nav.css";
+import { Link } from "react-router-dom";
+// some js left for navbar links when clicked
 
 export default function Navbar() {
   return (
@@ -17,24 +19,36 @@ export default function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="">
-              <p>00 </p>Home
-            </a>
+            <div>
+              <Link to="/home">
+                <p className="no">00 </p>
+                <p>Home</p>
+              </Link>
+            </div>
           </li>
           <li>
-            <a href="">
-              <p>01 </p>Destination
-            </a>
+            <div>
+              <Link to="/destination">
+                <p className="no">01 </p>
+                <p>Destination</p>
+              </Link>
+            </div>
           </li>
           <li>
-            <a href="">
-              <p>02 </p>Crew
-            </a>
+            <div>
+              <Link to="#">
+                <p className="no">02 </p>
+                <p>Crew</p>
+              </Link>
+            </div>
           </li>
           <li>
-            <a href="">
-              <p>03 </p>Technology
-            </a>
+            <div>
+              <Link to="#">
+                <p className="no">03 </p>
+                <p>Technology</p>
+              </Link>
+            </div>
           </li>
         </ul>
       </nav>

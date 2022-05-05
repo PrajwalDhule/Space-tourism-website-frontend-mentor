@@ -27,8 +27,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2.5em 0 0 3em;
-  width: calc(100% - 3em);
+  margin: 2em 0 0 2.5em;
+  width: calc(100% - 2.5em);
   z-index: 2;
 }
 
@@ -38,14 +38,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.75em 11.25em 1.75em 9em;
-  background: rgba(35, 34, 34, 0.4);
+  padding: 1.5em 10em 1.5em 6.5em;
+  background: rgba(71, 69, 69, 0.4);
   -webkit-backdrop-filter: saturate(180%) blur(10px);
           backdrop-filter: saturate(180%) blur(10px);
   position: relative;
 }
 
 .nav ul li a {
+  position: relative;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,22 +58,54 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  font-size: 1.4vw;
+  font-size: 0.85rem;
   font-weight: lighter;
 }
 
-.nav ul li a p {
+.nav ul li a .no {
   margin-right: 0.5em;
   font-weight: bold;
 }
 
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.75em;
+  width: 100%;
+  height: 2px;
+  background: #969696;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.nav ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.nav ul li a:active::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 .nav ul li + li {
-  margin-left: 3.5em;
+  margin-left: 3em;
 }
 
 .nav .line {
   position: absolute;
-  width: 42%;
+  width: 36%;
   height: 0.25vh;
   background-color: #3c3c3c;
   -webkit-transform: translateX(6em);

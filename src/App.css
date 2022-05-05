@@ -36,12 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.App {
-  background-image: url("./starter-code/assets/home/background-home-desktop.jpg");
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  width: 100vw;
-  height: 100vh;
-}
