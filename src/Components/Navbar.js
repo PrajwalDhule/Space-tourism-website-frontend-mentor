@@ -20,7 +20,7 @@ export default function Navbar() {
         <ul>
           <li>
             <div>
-              <Link to="/home">
+              <Link to="/">
                 <p className="no">00 </p>
                 <p>Home</p>
               </Link>

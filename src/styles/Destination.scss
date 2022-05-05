@@ -14,7 +14,7 @@
   position: absolute;
   color: white;
   text-align: left;
-  padding: 9.5rem 0 0 10rem;
+  padding: 8.5rem 0 0 10rem;
   .heading {
     text-transform: uppercase;
     @include flex(flex-start);
@@ -30,18 +30,61 @@
     @include flex(center);
     .left {
       width: 40vw;
+      border: 1px solid white;
+      padding-left: 75px;
       img {
-        margin-top: 25px;
-        height: 45vh;
+        margin-top: 35px;
+        height: 52vh;
       }
     }
     .right {
       width: 40vw;
       height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      border: 1px solid white;
+      transform: translateY(-40px);
       div {
-        width: 100%;
+        border: 1px solid white;
+        width: 33vw;
+      }
+      .sub-nav {
+        @include flex(flex-start);
+        width: 30vw;
+        padding-bottom: 1.5em;
         p {
+          color: white;
+          margin-right: 1em;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.75em;
+            width: 100%;
+            height: 2px;
+            background: rgb(150, 150, 150);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 250ms ease-in;
+          }
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
         }
+      }
+      .title {
+        font-family: "Bellefair", serif;
+        font-size: 70px;
+      }
+      .body {
+        // font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
       }
     }
   }

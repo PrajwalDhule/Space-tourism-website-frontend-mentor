@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/destination" element={<Destination />} />
           {/* <Route path="/destination" element={<Destination />} />
         <Route path="/destination" element={<Destination />} /> */}

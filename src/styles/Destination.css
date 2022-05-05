@@ -8,7 +8,7 @@
   position: absolute;
   color: white;
   text-align: left;
-  padding: 9.5rem 0 0 10rem;
+  padding: 8.5rem 0 0 10rem;
 }
 
 .container .heading {
@@ -47,19 +47,94 @@
 
 .container .content .left {
   width: 40vw;
+  border: 1px solid white;
+  padding-left: 75px;
 }
 
 .container .content .left img {
-  margin-top: 25px;
-  height: 45vh;
+  margin-top: 35px;
+  height: 52vh;
 }
 
 .container .content .right {
   width: 40vw;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid white;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
 }
 
 .container .content .right div {
+  border: 1px solid white;
+  width: 33vw;
+}
+
+.container .content .right .sub-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30vw;
+  padding-bottom: 1.5em;
+}
+
+.container .content .right .sub-nav p {
+  color: white;
+  margin-right: 1em;
+  position: relative;
+}
+
+.container .content .right .sub-nav p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.75em;
   width: 100%;
+  height: 2px;
+  background: #969696;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.container .content .right .sub-nav p:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.container .content .right .title {
+  font-family: "Bellefair", serif;
+  font-size: 70px;
+}
+
+.container .content .right .body {
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=Destination.css.map */

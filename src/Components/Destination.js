@@ -16,7 +16,7 @@ export default function Destination(props) {
           ></img>
         </div>
         <div className="right">
-          <div className="nav">
+          <div className="sub-nav">
             <Link to="/">
               <p>MOON</p>
             </Link>
@@ -30,8 +30,13 @@ export default function Destination(props) {
               <p>TITAN</p>
             </Link>
           </div>
-          <div className="title"></div>
-          <div className="body"></div>
+          <div className="title">MOON</div>
+          <div className="body">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </div>
           <div className="line"></div>
           <div className="info">
             <div className="one">
