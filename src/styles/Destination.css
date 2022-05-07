@@ -13,6 +13,7 @@
 
 .container .heading {
   text-transform: uppercase;
+  padding-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,14 +47,19 @@
 }
 
 .container .content .left {
+  overflow: hidden;
+  height: 50vh;
   width: 40vw;
-  border: 1px solid white;
   padding-left: 75px;
 }
 
 .container .content .left img {
-  margin-top: 35px;
+  margin-bottom: 45px;
   height: 52vh;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
 .container .content .right {
@@ -72,13 +78,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid white;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
+  padding-top: 35px;
 }
 
 .container .content .right div {
-  border: 1px solid white;
   width: 33vw;
 }
 
@@ -93,10 +98,11 @@
       -ms-flex-align: center;
           align-items: center;
   width: 30vw;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 
 .container .content .right .sub-nav p {
+  cursor: pointer;
   color: white;
   margin-right: 1em;
   position: relative;
@@ -114,10 +120,10 @@
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
-  transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
 }
 
 .container .content .right .sub-nav p:hover::after {
@@ -128,13 +134,77 @@
 }
 
 .container .content .right .title {
+  height: 15vh;
+  overflow: hidden;
+}
+
+.container .content .right .title p {
+  margin: 0;
   font-family: "Bellefair", serif;
   font-size: 70px;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
 .container .content .right .body {
+  overflow: hidden;
+  height: 17vh;
+  width: 31vw;
+}
+
+.container .content .right .body p {
+  margin: 5px;
   font-weight: 200;
   letter-spacing: 1.5px;
   line-height: 1.5;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.container .content .right .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .right .info .sub {
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 1em;
+  font-size: 12px;
+}
+
+.container .content .right .info .value {
+  overflow: hidden;
+  height: 3vh;
+}
+
+.container .content .right .info .value p {
+  margin: 0;
+  padding: 0;
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.line {
+  width: 36%;
+  height: 0.25vh;
+  background-color: #3c3c3c;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  z-index: 1;
 }
 /*# sourceMappingURL=Destination.css.map */

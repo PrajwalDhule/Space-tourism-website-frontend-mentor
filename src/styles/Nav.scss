@@ -32,7 +32,7 @@ a {
     list-style: none;
     margin: 0;
     display: flex;
-    padding: 1.5em 10em 1.5em 6.5em;
+    padding: 1.4em 10em 1.4em 6.5em;
     background: rgba(71, 69, 69, 0.4);
     backdrop-filter: saturate(180%) blur(10px);
     position: relative;
@@ -59,7 +59,7 @@ a {
 
           transform: scaleX(0);
           transform-origin: right;
-          transition: transform 250ms ease-in;
+          transition: transform 200ms ease-in;
         }
 
         &:hover::after {
@@ -81,7 +81,7 @@ a {
     width: 36%;
     height: 0.25vh;
     background-color: rgb(60, 60, 60);
-    transform: translateX(6em);
+    transform: translate(6em, -5px);
     z-index: 1;
   }
 }

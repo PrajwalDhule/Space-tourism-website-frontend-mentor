@@ -38,7 +38,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5em 10em 1.5em 6.5em;
+  padding: 1.4em 10em 1.4em 6.5em;
   background: rgba(71, 69, 69, 0.4);
   -webkit-backdrop-filter: saturate(180%) blur(10px);
           backdrop-filter: saturate(180%) blur(10px);
@@ -79,10 +79,10 @@ a {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
-  transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
 }
 
 .nav ul li a:hover::after {
@@ -108,8 +108,8 @@ a {
   width: 36%;
   height: 0.25vh;
   background-color: #3c3c3c;
-  -webkit-transform: translateX(6em);
-          transform: translateX(6em);
+  -webkit-transform: translate(6em, -5px);
+          transform: translate(6em, -5px);
   z-index: 1;
 }
 /*# sourceMappingURL=Nav.css.map */

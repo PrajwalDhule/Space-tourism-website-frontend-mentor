@@ -17,6 +17,7 @@
   padding: 8.5rem 0 0 10rem;
   .heading {
     text-transform: uppercase;
+    padding-left: 25px;
     @include flex(flex-start);
     p + p {
       margin-left: 0.8em;
@@ -29,12 +30,15 @@
   .content {
     @include flex(center);
     .left {
+      overflow: hidden;
+      height: 50vh;
       width: 40vw;
-      border: 1px solid white;
       padding-left: 75px;
       img {
-        margin-top: 35px;
+        margin-bottom: 45px;
+        // transform: translateY(-60vh);
         height: 52vh;
+        transition: transform 250ms ease-in;
       }
     }
     .right {
@@ -44,17 +48,17 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-      border: 1px solid white;
       transform: translateY(-40px);
+      padding-top: 35px;
       div {
-        border: 1px solid white;
         width: 33vw;
       }
       .sub-nav {
         @include flex(flex-start);
         width: 30vw;
-        padding-bottom: 1.5em;
+        padding-bottom: 0.5em;
         p {
+          cursor: pointer;
           color: white;
           margin-right: 1em;
           position: relative;
@@ -68,7 +72,7 @@
             background: rgb(150, 150, 150);
             transform: scaleX(0);
             transform-origin: right;
-            transition: transform 250ms ease-in;
+            transition: transform 200ms ease-in;
           }
           &:hover::after {
             transform: scaleX(1);
@@ -77,15 +81,58 @@
         }
       }
       .title {
-        font-family: "Bellefair", serif;
-        font-size: 70px;
+        height: 15vh;
+        overflow: hidden;
+        p {
+          // transform: translateY(-13vh);
+          margin: 0;
+          font-family: "Bellefair", serif;
+          font-size: 70px;
+          transition: transform 250ms ease-in;
+        }
       }
       .body {
-        // font-size: 12px;
-        font-weight: 200;
-        letter-spacing: 1.5px;
-        line-height: 1.5;
+        overflow: hidden;
+        height: 17vh;
+        width: 31vw;
+        p {
+          margin: 5px;
+          font-weight: 200;
+          // transform: translateY(-17.25vh);
+          letter-spacing: 1.5px;
+          line-height: 1.5;
+          transition: transform 250ms ease-in;
+        }
+      }
+      .info {
+        @include flex(center);
+        .sub {
+          font-family: "Barlow Condensed", sans-serif;
+          margin-bottom: 1em;
+          font-size: 12px;
+        }
+        .value {
+          overflow: hidden;
+          height: 3vh;
+          p {
+            margin: 0;
+            padding: 0;
+            font-family: "Bellefair", serif;
+            font-size: 20px;
+            // transform: translateY(-4vh);
+            transition: transform 250ms ease-in;
+          }
+        }
       }
     }
   }
+}
+
+.line {
+  width: 36%;
+  height: 0.25vh;
+  background-color: rgb(60, 60, 60);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  z-index: 1;
 }
