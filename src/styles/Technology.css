@@ -1,0 +1,185 @@
+.tech-body {
+  background-image: url("../starter-code/assets/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: left;
+  overflow: hidden;
+}
+
+.tech-body .container {
+  position: absolute;
+  height: 70%;
+  left: 0%;
+  top: 58%;
+  -webkit-transform: translate(25%, -50%);
+          transform: translate(25%, -50%);
+}
+
+.tech-body .container .role {
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin: 0.5em 0;
+}
+
+.tech-body .container .heading {
+  text-transform: uppercase;
+  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech-body .container .heading p + p {
+  margin-left: 0.8em;
+  font-weight: 300;
+}
+
+.tech-body .container .heading p {
+  font-size: 1.25rem;
+}
+
+.tech-body .container .heading p:nth-child(1) {
+  opacity: 0.25;
+  font-weight: 600;
+}
+
+.tech-body .container .sub-nav {
+  position: relative;
+  padding-bottom: 0.5em;
+  bottom: 0;
+}
+
+.tech-body .container .sub-nav div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.85rem;
+  padding: 1em;
+  cursor: pointer;
+  margin-bottom: 0.9em;
+  margin-right: 2em;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tech-body .container .sub-nav div p {
+  font-family: "Bellefair", serif;
+  text-align: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.1em;
+}
+
+.tech-body .container .sub-nav div:hover {
+  border: 1px solid white;
+}
+
+.tech-body .container .sub-nav .active {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+
+.tech-body .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  height: 100%;
+}
+
+.tech-body .container .content .title {
+  width: 100%;
+  overflow: hidden;
+}
+
+.tech-body .container .content .title p {
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-size: 3rem;
+}
+
+.tech-body .container .content .desc {
+  width: 70%;
+  overflow: hidden;
+}
+
+.tech-body .container .content .desc p {
+  margin: 5px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  color: #d0d6f9;
+}
+
+.tech-body .container .content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech-body .container .content .info .sub {
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 1em;
+  font-size: 12px;
+}
+
+.tech-body .container .content .info .value {
+  overflow: hidden;
+  height: 3vh;
+  margin-bottom: 0;
+}
+
+.tech-body .container .content .info .value p {
+  margin: 0;
+  padding: 0;
+  font-family: "Bellefair", serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.tech-body img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  height: 62vh;
+}
+
+.line {
+  width: 36%;
+  height: 0.25vh;
+  background-color: #3c3c3c;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+/*# sourceMappingURL=Technology.css.map */

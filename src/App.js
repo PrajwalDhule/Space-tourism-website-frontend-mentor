@@ -2,6 +2,10 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Destination from "./Components/Destination";
+import Crew from "./Components/Crew";
+import Technology from "./Components/Technology";
+import "./styles/Crew.css";
+import "./styles/Technology.css";
 // import "./styles/Styles.css";
 import "./styles/Global.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -10,12 +14,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/destination" element={<Destination />} />
-          {/* <Route path="/destination" element={<Destination />} />
-        <Route path="/destination" element={<Destination />} /> */}
+          <Route exact path="/destination" element={<Destination />} />
+          <Route eaxct path="/crew" element={<Crew />} />
+          <Route eaxct path="/technology" element={<Technology />} />
         </Routes>
       </Router>
     </div>

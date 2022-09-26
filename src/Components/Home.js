@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/Home.css";
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (
     <div className="home">
+      <Navbar page="home"></Navbar>
       <div className="left">
         <p className="medium">So, you want to travel to</p>
         <p className="big">Space</p>
@@ -16,7 +18,7 @@ export default function Home() {
       </div>
       <div className="right">
         <div className="button">
-          <a href="#">EXPLORE</a>
+          <a href="/destination">EXPLORE</a>
         </div>
       </div>
     </div>
