@@ -1,0 +1,501 @@
+@media (min-width: 1921px) {
+  .nav .line {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1650px) {
+  .nav .line {
+    width: 0;
+  }
+  .dest-body .container .content .right .title p {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 1450px) {
+  .home {
+    font-size: 14px;
+  }
+  .nav ul li a::after {
+    bottom: -1em;
+  }
+}
+
+@media (max-width: 1250px) {
+  .nav {
+    margin-top: 0;
+  }
+  .nav ul {
+    background: rgba(71, 69, 69, 0.25);
+    padding-left: 5em;
+    padding-right: 5em;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+  }
+  .nav ul li a::after {
+    bottom: -1em;
+  }
+  .nav .no {
+    display: none;
+  }
+  .home,
+  .dest-body,
+  .crew-body,
+  .tech-body {
+    font-size: 12px;
+  }
+  .home-body {
+    background-image: url("../starter-code/assets/home/background-home-tablet.jpg");
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .home-body .left {
+    margin-top: 10em;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-body .left .small {
+    width: 500px;
+    max-width: 70%;
+    text-align: center;
+    font-size: 1.65em;
+  }
+  .home-body .left .medium {
+    font-size: 1.75em;
+  }
+  .home-body .left .big {
+    font-size: 12.5em;
+  }
+  .home-body .right {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-body .right .button {
+    margin: 0;
+    margin-top: 15em;
+    width: 25em;
+    height: 25em;
+  }
+  .dest-body {
+    background-image: url("../starter-code/assets/destination/background-destination-tablet.jpg");
+    max-height: 300vh;
+  }
+  .dest-body .container {
+    -webkit-transform: translate(0, -60%);
+            transform: translate(0, -60%);
+  }
+  .dest-body .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dest-body .container .content .left {
+    width: 100%;
+  }
+  .dest-body .container .content .left img {
+    height: 25vh;
+    margin: 5vh 0 7.5vh 0;
+  }
+  .dest-body .container .content .right {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .dest-body .container .content .right .sub-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0.5em;
+  }
+  .dest-body .container .content .right .sub-nav p + p {
+    margin-left: 1.75em;
+  }
+  .dest-body .container .content .right .desc {
+    font-size: 1rem;
+    margin-bottom: 2em;
+  }
+  .dest-body .container .content .right p {
+    text-align: center;
+  }
+  .dest-body .container .content .right .one,
+  .dest-body .container .content .right .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .crew-body .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 55%;
+    -webkit-transform: translate(0, -60%);
+            transform: translate(0, -60%);
+  }
+  .crew-body .container .content {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .crew-body .container .content p {
+    text-align: center;
+  }
+  .crew-body .container .content .desc {
+    width: 65%;
+    font-size: 1em;
+  }
+  .crew-body .container .content .desc p {
+    line-height: 1.7;
+  }
+  .crew-body .container .content .sub-nav {
+    bottom: -4em;
+  }
+  .crew-body img.large {
+    height: 45vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .tech-body {
+    background-image: url("../starter-code/assets/technology/background-technology-tablet.jpg");
+  }
+  .tech-body .container {
+    top: 55%;
+    -webkit-transform: translate(0, -60%);
+            transform: translate(0, -60%);
+  }
+  .tech-body .container .content {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tech-body .container .content .sub-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4em 0 2.5em 0;
+  }
+  .tech-body .container .content .sub-nav .nav-item {
+    font-size: 1.75rem;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tech-body .container .content .sub-nav .nav-item + .nav-item {
+    margin-left: 0.5em;
+  }
+  .tech-body .container .content .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tech-body .container .content .text p {
+    text-align: center;
+  }
+  .tech-body .container .content .text .title {
+    margin: 0.5em 0;
+  }
+  .tech-body .container .content .text .title p {
+    font-size: 3.5em;
+  }
+  .tech-body .container .content .text .desc {
+    width: 70%;
+    font-size: 1em;
+  }
+  .tech-body .container .content .text .desc p {
+    line-height: 1.75;
+  }
+  .tech-body .small {
+    display: block;
+    width: 101%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .tech-body .large {
+    display: none;
+  }
+  .heading {
+    margin-left: 3em;
+  }
+  .heading p {
+    font-size: 2em !important;
+  }
+}
+
+@media (max-width: 730px) {
+  .home,
+  .dest-body,
+  .crew-body,
+  .tech-body {
+    font-size: 8px;
+  }
+  .home-body {
+    background-image: url("../starter-code/assets/home/background-home-mobile.jpg");
+  }
+  .home-body .left .big {
+    font-size: 10em;
+  }
+  .home-body .left .medium {
+    letter-spacing: 3px;
+  }
+  .home-body .button a {
+    font-size: 3em !important;
+  }
+  .nav {
+    height: 10vh;
+    overflow-x: hidden;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 2.5em;
+    -webkit-transition: height 0s 250ms;
+    transition: height 0s 250ms;
+  }
+  .nav #logo-svg {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  .nav .no {
+    display: block;
+  }
+  .nav .ham-options {
+    display: block;
+  }
+  .nav ul {
+    background: rgba(38, 37, 37, 0.4);
+    -webkit-backdrop-filter: saturate(180%) blur(40px);
+            backdrop-filter: saturate(180%) blur(40px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250ms;
+    transition: -webkit-transform 250ms;
+    transition: transform 250ms;
+    transition: transform 250ms, -webkit-transform 250ms;
+    height: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 10em;
+    padding-top: 12.5em;
+  }
+  .nav ul li {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .nav ul li div {
+    width: 100%;
+  }
+  .nav ul li div a {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    font-size: 1rem;
+  }
+  .nav ul li div a::after {
+    margin-right: 0;
+    top: 33%;
+    bottom: auto;
+    right: -5em;
+    width: 3px;
+    height: 50%;
+    left: auto;
+  }
+  .nav .open {
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
+    -webkit-transition: -webkit-transform 250ms;
+    transition: -webkit-transform 250ms;
+    transition: transform 250ms;
+    transition: transform 250ms, -webkit-transform 250ms;
+  }
+  .open-nav {
+    z-index: 5;
+    height: 100vh;
+    -webkit-transition: height 0s 0s;
+    transition: height 0s 0s;
+  }
+  .dest-body {
+    background-image: url("../starter-code/assets/destination/background-destination-mobile.jpg");
+  }
+  .dest-body .container .content .right .sub-nav {
+    font-size: 0.7em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1em 0;
+  }
+  .dest-body .container .content .right .sub-nav p {
+    margin: 0;
+  }
+  .dest-body .container .content .right .sub-nav p + p {
+    margin-left: 1.5em;
+  }
+  .dest-body .container .content .right .title p {
+    font-size: 3em;
+  }
+  .dest-body .container .content .right .desc {
+    font-size: 0.55em;
+    margin-bottom: 2em;
+  }
+  .dest-body .container .content .right p {
+    text-align: center;
+  }
+  .dest-body .container .content .right .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 3em;
+  }
+  .dest-body .container .content .right .one,
+  .dest-body .container .content .right .two {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .dest-body .container .content .right .one .value,
+  .dest-body .container .content .right .two .value {
+    padding-bottom: 1em;
+  }
+  .dest-body .container img {
+    margin: 2vh 0 7vh 0 !important;
+  }
+  .crew-body {
+    background-image: url("../starter-code/assets/crew/background-crew-mobile.jpg");
+  }
+  .crew-body .small {
+    display: block;
+    position: relative;
+    height: 25vh;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .crew-body .large {
+    display: none;
+  }
+  .crew-body .container .content .img-line {
+    display: block;
+  }
+  .crew-body .container .content .role {
+    font-size: 1rem;
+  }
+  .crew-body .container .content .title p {
+    font-size: 3em;
+  }
+  .crew-body .container .content .desc {
+    width: 85%;
+    font-size: 1.25em;
+  }
+  .crew-body .container .content .sub-nav {
+    margin: 4em 0 2em 0;
+  }
+  .crew-body .container .content .sub-nav div {
+    height: 0.75rem;
+  }
+  .crew-body .container .content .small-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    bottom: auto;
+  }
+  .crew-body .container .content .large-nav {
+    display: none;
+  }
+  .tech-body {
+    background-image: url("../starter-code/assets/technology/background-technology-mobile.jpg");
+  }
+  .container {
+    -webkit-transform: translate(0, -65%) !important;
+            transform: translate(0, -65%) !important;
+  }
+  .heading {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=media.css.map */

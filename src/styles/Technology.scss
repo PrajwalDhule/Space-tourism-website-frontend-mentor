@@ -18,10 +18,13 @@
   .container {
     position: absolute;
     height: 70%;
+    // width: 100%;
     left: 0%;
     top: 58%;
     transform: translate(25%, -50%);
+    // padding-left: 25%;
     .role {
+      font-size: 1.25em;
       text-transform: uppercase;
       opacity: 0.5;
       margin: 0.5em 0;
@@ -35,7 +38,7 @@
         font-weight: 300;
       }
       p {
-        font-size: 1.25rem;
+        font-size: 2rem;
       }
       p:nth-child(1) {
         opacity: 0.25;
@@ -49,7 +52,7 @@
       div {
         position: relative;
         @include flex(center);
-        font-size: 1.85rem;
+        font-size: 2.75rem;
         padding: 1em;
         cursor: pointer;
         margin-bottom: 0.9em;
@@ -90,17 +93,18 @@
         p {
           margin: 0;
           font-family: "Bellefair", serif;
-          font-size: 3rem;
+          font-size: 4.25em;
         }
       }
       .desc {
-        width: 70%;
+        width: 75%;
         overflow: hidden;
         p {
+          font-size: 1.6em;
           margin: 5px;
           font-weight: 200;
           letter-spacing: 1.5px;
-          line-height: 1.5;
+          line-height: 2;
           color: #d0d6f9;
         }
       }
@@ -127,12 +131,14 @@
       }
     }
   }
-  img {
+  .large {
     position: absolute;
-    right: 0;
+    right: -1%;
     top: 50%;
     transform: translateY(-30%);
-    height: 62vh;
+  }
+  .small {
+    display: none;
   }
 }
 

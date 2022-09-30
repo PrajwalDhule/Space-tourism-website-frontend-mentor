@@ -30,6 +30,19 @@ export default function Crew() {
           <p>Meet your crew </p>
         </div>
         <div className="content">
+          <img
+            className="small"
+            src={arr[index]}
+            alt={Record.crew[index].name.toUpperCase()}
+          />
+          <div className="img-line"></div>
+          <div className="sub-nav small-nav">
+            <div className="nav-item active" onClick={() => toggle(0)}></div>
+            <div className="nav-item" onClick={() => toggle(1)}></div>
+            <div className="nav-item" onClick={() => toggle(2)}></div>
+            <div className="nav-item" onClick={() => toggle(3)}></div>
+          </div>
+
           <p className="role">{Record.crew[index].role.toUpperCase()}</p>
           <div className="title">
             <p>{Record.crew[index].name.toUpperCase()}</p>
@@ -37,7 +50,7 @@ export default function Crew() {
           <div className="desc">
             <p>{Record.crew[index].bio}</p>
           </div>
-          <div className="sub-nav">
+          <div className="sub-nav large-nav">
             <div className="nav-item active" onClick={() => toggle(0)}></div>
             <div className="nav-item" onClick={() => toggle(1)}></div>
             <div className="nav-item" onClick={() => toggle(2)}></div>
@@ -45,7 +58,11 @@ export default function Crew() {
           </div>
         </div>
       </div>
-      <img src={arr[index]} alt="planet"></img>
+      <img
+        className="large large-img"
+        src={arr[index]}
+        alt={Record.crew[index].name.toUpperCase()}
+      />
     </div>
   );
 }

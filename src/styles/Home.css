@@ -1,4 +1,4 @@
-.home {
+.home-body {
   background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,30 +7,30 @@
   position: absolute;
   color: white;
   text-align: left;
-  padding: 9.5rem 0 0 10rem;
+  padding: 0rem 10rem 8rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.home .left {
-  width: 33%;
+.home-body .left {
+  width: 40%;
 }
 
-.home .left p {
+.home-body .left p {
   margin: 0;
   padding: 0;
 }
 
-.home .left .medium {
+.home-body .left .medium {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 22px;
+  font-size: 2.25em;
   text-transform: uppercase;
   letter-spacing: 4.75px;
   font-weight: 200;
@@ -38,40 +38,36 @@
   color: #d0d6f9;
 }
 
-.home .left .big {
+.home-body .left .big {
   font-family: "Bellefair", serif;
-  font-size: 120px;
+  font-size: 11em;
   text-transform: uppercase;
   margin-bottom: 7.5px;
 }
 
-.home .left .small {
-  font-size: 14px;
+.home-body .left .small {
+  font-size: 1.75em;
   font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.75;
   color: #d0d6f9;
 }
 
-.home .right {
-  width: 35%;
+.home-body .right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.home .right .button {
-  position: absolute;
-  z-index: 0;
-  margin-bottom: -50px;
-  background-color: white;
-  width: 12.5em;
-  height: 12.5em;
-  border-radius: 50%;
-  -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
-  -webkit-transition: -webkit-box-shadow 250ms ease-in;
-  transition: -webkit-box-shadow 250ms ease-in;
-  transition: box-shadow 250ms ease-in;
-  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+.home-body .right .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,19 +77,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 0;
+  background-color: white;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in;
+  transition: -webkit-box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in;
+  transition: box-shadow 250ms ease-in, -webkit-box-shadow 250ms ease-in;
+  margin-right: 7.5em;
 }
 
-.home .right .button a {
+.home-body .right .button a {
   position: relative;
   font-family: "Bellefair", serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 2.75rem;
   color: black;
 }
 
-.home .right .button:hover {
+.home-body .right .button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 0 55px rgba(40, 45, 53, 0.957);
-          box-shadow: 0 0 0 55px rgba(40, 45, 53, 0.957);
+  -webkit-box-shadow: 0 0 0 5em rgba(40, 45, 53, 0.957);
+          box-shadow: 0 0 0 5em rgba(40, 45, 53, 0.957);
 }
 /*# sourceMappingURL=Home.css.map */

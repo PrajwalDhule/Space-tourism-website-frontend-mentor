@@ -20,6 +20,7 @@
 }
 
 .tech-body .container .role {
+  font-size: 1.25em;
   text-transform: uppercase;
   opacity: 0.5;
   margin: 0.5em 0;
@@ -45,7 +46,7 @@
 }
 
 .tech-body .container .heading p {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .tech-body .container .heading p:nth-child(1) {
@@ -70,7 +71,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.85rem;
+  font-size: 2.75rem;
   padding: 1em;
   cursor: pointer;
   margin-bottom: 0.9em;
@@ -117,19 +118,20 @@
 .tech-body .container .content .title p {
   margin: 0;
   font-family: "Bellefair", serif;
-  font-size: 3rem;
+  font-size: 4.25em;
 }
 
 .tech-body .container .content .desc {
-  width: 70%;
+  width: 75%;
   overflow: hidden;
 }
 
 .tech-body .container .content .desc p {
+  font-size: 1.6em;
   margin: 5px;
   font-weight: 200;
   letter-spacing: 1.5px;
-  line-height: 1.5;
+  line-height: 2;
   color: #d0d6f9;
 }
 
@@ -165,13 +167,16 @@
   font-weight: 200;
 }
 
-.tech-body img {
+.tech-body .large {
   position: absolute;
-  right: 0;
+  right: -1%;
   top: 50%;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
-  height: 62vh;
+}
+
+.tech-body .small {
+  display: none;
 }
 
 .line {

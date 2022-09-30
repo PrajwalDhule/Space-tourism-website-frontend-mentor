@@ -7,13 +7,14 @@
   height: 100vh;
   color: white;
   text-align: left;
+  overflow-x: hidden;
 }
 
 .dest-body .container {
   position: absolute;
   height: 70%;
   left: 0;
-  top: 58%;
+  top: 55%;
   -webkit-transform: translate(15%, -50%);
           transform: translate(15%, -50%);
 }
@@ -37,7 +38,7 @@
 }
 
 .dest-body .container .heading p {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .dest-body .container .heading p:nth-child(1) {
@@ -55,11 +56,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1em;
 }
 
 .dest-body .container .content .left {
   overflow: hidden;
-  height: 50vh;
   width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,8 +75,9 @@
 }
 
 .dest-body .container .content .right {
-  width: 40vw;
+  width: 45vw;
   height: 100%;
+  margin-left: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +94,7 @@
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
   padding-top: 35px;
+  font-size: 22px;
 }
 
 .dest-body .container .content .right div {
@@ -143,6 +146,11 @@
           transform-origin: left;
 }
 
+.dest-body .container .content .right .sub-nav .active-dest::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .dest-body .container .content .right .title {
   overflow: hidden;
 }
@@ -150,7 +158,7 @@
 .dest-body .container .content .right .title p {
   margin: 0;
   font-family: "Bellefair", serif;
-  font-size: 70px;
+  font-size: 5em;
 }
 
 .dest-body .container .content .right .desc {
@@ -158,6 +166,7 @@
 }
 
 .dest-body .container .content .right .desc p {
+  font-size: 1.2em;
   margin: 5px;
   font-weight: 200;
   letter-spacing: 1.5px;
@@ -175,12 +184,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.3em;
 }
 
 .dest-body .container .content .right .info .sub {
   font-family: "Barlow Condensed", sans-serif;
   margin-bottom: 1em;
-  font-size: 12px;
+  font-size: 0.6em;
   color: #d0d6f9;
 }
 
@@ -194,7 +204,7 @@
   margin: 0;
   padding: 0;
   font-family: "Bellefair", serif;
-  font-size: 20px;
+  font-size: 1.1em;
   font-weight: 200;
 }
 

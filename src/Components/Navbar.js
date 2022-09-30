@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Nav.css";
 import { Link } from "react-router-dom";
+import hamburger from "../starter-code/assets/shared/icon-hamburger.svg";
+import close from "../starter-code/assets/shared/icon-close.svg";
 // some js left for navbar links when clicked
 
 export default function Navbar(props) {
+  const [menuClass, setMenuClass] = useState("");
+
   return (
-    <div className="nav">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <div className={"nav " + menuClass + "-nav"}>
+      <svg
+        id="logo-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+      >
         <g fill="none" fillRule="evenodd">
           <circle cx="24" cy="24" r="24" fill="#FFF" />
           <path
@@ -15,9 +24,27 @@ export default function Navbar(props) {
           />
         </g>
       </svg>
+      <div className="ham-options">
+        <img
+          onClick={() => {
+            setMenuClass("open");
+          }}
+          className="ham"
+          style={menuClass ? { display: "none" } : { display: "block" }}
+          src={hamburger}
+        />
+        <img
+          onClick={() => {
+            setMenuClass("");
+          }}
+          className="ham"
+          style={menuClass ? { display: "block" } : { display: "none" }}
+          src={close}
+        />
+      </div>
       <div className="line"></div>
       <nav>
-        <ul>
+        <ul className={menuClass}>
           <li className={`${props.page}-1`}>
             <div>
               <Link to="/">

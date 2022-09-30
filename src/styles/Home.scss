@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.home {
+.home-body {
   background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,17 +13,20 @@
   position: absolute;
   color: white;
   text-align: left;
-  padding: 9.5rem 0 0 10rem;
-  @include flex(space-between);
+  // padding: 9.5rem 0 0 10rem;
+  padding: 0rem 10rem 8rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   .left {
-    width: 33%;
+    width: 40%;
     p {
       margin: 0;
       padding: 0;
     }
     .medium {
       font-family: "Barlow Condensed", sans-serif;
-      font-size: 22px;
+      font-size: 2.25em;
       text-transform: uppercase;
       letter-spacing: 4.75px;
       font-weight: 200;
@@ -32,43 +35,44 @@
     }
     .big {
       font-family: "Bellefair", serif;
-      font-size: 120px;
+      font-size: 11em;
       text-transform: uppercase;
       margin-bottom: 7.5px;
     }
     .small {
-      font-size: 14px;
+      font-size: 1.75em;
       font-family: "Barlow Condensed", sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 1px;
       line-height: 1.75;
       color: #d0d6f9;
     }
   }
   .right {
-    width: 35%;
+    // width: 35%;
+    position: relative;
+    @include flex(left);
     .button {
-      position: absolute;
-      z-index: 0;
-      margin-bottom: -50px;
-      background-color: white;
-      width: 12.5em;
-      height: 12.5em;
-      border-radius: 50%;
-      transform: translateY(-60px);
-      transition: box-shadow 250ms ease-in;
       @include flex(center);
+      // position: absolute;
+      z-index: 0;
+      background-color: white;
+      width: 20em;
+      height: 20em;
+      border-radius: 50%;
+      transition: box-shadow 250ms ease-in;
+      margin-right: 7.5em;
       a {
         position: relative;
         font-family: "Bellefair", serif;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 2.75rem;
         color: black;
       }
 
       &:hover {
         cursor: pointer;
-        box-shadow: 0 0 0 55px rgba(40, 45, 53, 0.957);
+        box-shadow: 0 0 0 5em rgba(40, 45, 53, 0.957);
       }
     }
   }

@@ -6,6 +6,7 @@ import Crew from "./Components/Crew";
 import Technology from "./Components/Technology";
 import "./styles/Crew.css";
 import "./styles/Technology.css";
+import "./styles/media.css";
 // import "./styles/Styles.css";
 import "./styles/Global.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

@@ -21,11 +21,12 @@
   color: white;
   text-align: left;
   // padding: 8.5rem 0 0 10rem;
+  overflow-x: hidden;
   .container {
     position: absolute;
     height: 70%;
     left: 0;
-    top: 58%;
+    top: 55%;
     transform: translate(15%, -50%);
     .heading {
       text-transform: uppercase;
@@ -35,7 +36,7 @@
         font-weight: 300;
       }
       p {
-        font-size: 1.25rem;
+        font-size: 2rem;
       }
       p:nth-child(1) {
         opacity: 0.25;
@@ -44,35 +45,35 @@
     }
     .content {
       @include flex(center);
+      margin-top: 1em;
       .left {
         overflow: hidden;
-        height: 50vh;
+        // height: 50vh;
         width: 40vw;
-        // padding-left: 75px;
         display: flex;
         justify-content: center;
         img {
-          // margin-bottom: 45px;
-          // margin-right: 5vw;
-          // transform: translateY(-60vh);
           height: 50vh;
         }
       }
       .right {
-        width: 40vw;
+        width: 45vw;
         height: 100%;
+        margin-left: 2em;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
         transform: translateY(-40px);
         padding-top: 35px;
+        font-size: 22px;
         div {
           width: 78%;
         }
         .sub-nav {
           @include flex(flex-start);
           padding-bottom: 0.5em;
+
           p {
             cursor: pointer;
             color: #d0d6f9;
@@ -95,18 +96,22 @@
               transform-origin: left;
             }
           }
+          .active-dest::after {
+            transform: scaleX(1);
+          }
         }
         .title {
           overflow: hidden;
           p {
             margin: 0;
             font-family: "Bellefair", serif;
-            font-size: 70px;
+            font-size: 5em;
           }
         }
         .desc {
           overflow: hidden;
           p {
+            font-size: 1.2em;
             margin: 5px;
             font-weight: 200;
             letter-spacing: 1.5px;
@@ -116,10 +121,11 @@
         }
         .info {
           @include flex(center);
+          font-size: 1.3em;
           .sub {
             font-family: "Barlow Condensed", sans-serif;
             margin-bottom: 1em;
-            font-size: 12px;
+            font-size: 0.6em;
             color: #d0d6f9;
           }
           .value {
@@ -131,7 +137,7 @@
               margin: 0;
               padding: 0;
               font-family: "Bellefair", serif;
-              font-size: 20px;
+              font-size: 1.1em;
               font-weight: 200;
             }
           }
