@@ -11,8 +11,8 @@ export default function Destination() {
   const [index, setIndex] = useState(0);
   const arr = [image1, image2, image3, image4];
 
-  const toggle = (index) => {
-    setIndex(index);
+  const toggle = (i) => {
+    setIndex(i);
     let activeItems = document.getElementsByClassName("active-dest");
     let items = document.getElementsByClassName("nav-item-dest");
     for (let i = 0; i < activeItems.length; i++) {

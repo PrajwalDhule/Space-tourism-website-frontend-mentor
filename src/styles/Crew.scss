@@ -67,7 +67,6 @@
         bottom: 0;
         div {
           cursor: pointer;
-          color: white;
           margin-right: 1.75em;
           position: relative;
           border-radius: 50%;
@@ -79,7 +78,7 @@
             opacity: 0.5;
           }
         }
-        .active {
+        .active-crew {
           opacity: 1;
         }
       }

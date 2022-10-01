@@ -13,12 +13,12 @@ export default function Crew() {
 
   const toggle = (index) => {
     setIndex(index);
-    let activeItems = document.getElementsByClassName("active");
-    let items = document.getElementsByClassName("nav-item");
+    let activeItems = document.getElementsByClassName("active-crew");
+    let items = document.getElementsByClassName("nav-item-crew");
     for (let i = 0; i < activeItems.length; i++) {
-      activeItems[i].classList.remove("active");
+      activeItems[i].classList.remove("active-crew");
     }
-    items[index].classList.add("active");
+    items[index].classList.add("active-crew");
   };
 
   return (
@@ -37,10 +37,13 @@ export default function Crew() {
           />
           <div className="img-line"></div>
           <div className="sub-nav small-nav">
-            <div className="nav-item active" onClick={() => toggle(0)}></div>
-            <div className="nav-item" onClick={() => toggle(1)}></div>
-            <div className="nav-item" onClick={() => toggle(2)}></div>
-            <div className="nav-item" onClick={() => toggle(3)}></div>
+            <div
+              className="nav-item-crew active-crew"
+              onClick={() => toggle(0)}
+            ></div>
+            <div className="nav-item-crew" onClick={() => toggle(1)}></div>
+            <div className="nav-item-crew" onClick={() => toggle(2)}></div>
+            <div className="nav-item-crew" onClick={() => toggle(3)}></div>
           </div>
 
           <p className="role">{Record.crew[index].role.toUpperCase()}</p>
@@ -51,10 +54,13 @@ export default function Crew() {
             <p>{Record.crew[index].bio}</p>
           </div>
           <div className="sub-nav large-nav">
-            <div className="nav-item active" onClick={() => toggle(0)}></div>
-            <div className="nav-item" onClick={() => toggle(1)}></div>
-            <div className="nav-item" onClick={() => toggle(2)}></div>
-            <div className="nav-item" onClick={() => toggle(3)}></div>
+            <div
+              className="nav-item-crew active-crew"
+              onClick={() => toggle(0)}
+            ></div>
+            <div className="nav-item-crew" onClick={() => toggle(1)}></div>
+            <div className="nav-item-crew" onClick={() => toggle(2)}></div>
+            <div className="nav-item-crew" onClick={() => toggle(3)}></div>
           </div>
         </div>
       </div>
