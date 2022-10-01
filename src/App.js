@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Destination from "./Components/Destination";
 import Crew from "./Components/Crew";
@@ -16,10 +15,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/destination" element={<Destination />} />
-          <Route eaxct path="/crew" element={<Crew />} />
-          <Route eaxct path="/technology" element={<Technology />} />
+          <Route exact path="/crew" element={<Crew />} />
+          <Route exact path="/technology" element={<Technology />} />
         </Routes>
       </Router>
     </div>
