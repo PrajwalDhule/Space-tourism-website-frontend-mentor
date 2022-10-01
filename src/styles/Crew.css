@@ -112,6 +112,10 @@
   opacity: 1;
 }
 
+.crew-body .container .content .sub-nav .active-crew-2 {
+  opacity: 1;
+}
+
 .crew-body .container .content .title {
   width: 100%;
   overflow: hidden;
@@ -169,6 +173,10 @@
   font-weight: 200;
 }
 
+.crew-body .container .content .small-nav {
+  display: none;
+}
+
 .crew-body img.large {
   position: absolute;
   bottom: 0;
@@ -177,10 +185,6 @@
 }
 
 .crew-body .small {
-  display: none;
-}
-
-.crew-body .small-nav {
   display: none;
 }
 

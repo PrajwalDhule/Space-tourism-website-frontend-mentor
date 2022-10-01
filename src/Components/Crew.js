@@ -19,6 +19,13 @@ export default function Crew() {
       activeItems[i].classList.remove("active-crew");
     }
     items[index].classList.add("active-crew");
+    let activeItems2 = document.getElementsByClassName("active-crew-2");
+    let items2 = document.getElementsByClassName("nav-item-crew-2");
+    for (let i = 0; i < activeItems.length; i++) {
+      activeItems2[i].classList.remove("active-crew-2");
+    }
+    items2[index].classList.add("active-crew-2");
+    console.log("clicked");
   };
 
   return (
@@ -55,12 +62,12 @@ export default function Crew() {
           </div>
           <div className="sub-nav large-nav">
             <div
-              className="nav-item-crew active-crew"
+              className="nav-item-crew-2 active-crew-2"
               onClick={() => toggle(0)}
             ></div>
-            <div className="nav-item-crew" onClick={() => toggle(1)}></div>
-            <div className="nav-item-crew" onClick={() => toggle(2)}></div>
-            <div className="nav-item-crew" onClick={() => toggle(3)}></div>
+            <div className="nav-item-crew-2" onClick={() => toggle(1)}></div>
+            <div className="nav-item-crew-2" onClick={() => toggle(2)}></div>
+            <div className="nav-item-crew-2" onClick={() => toggle(3)}></div>
           </div>
         </div>
       </div>
